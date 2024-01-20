@@ -2,7 +2,7 @@ class Board():
   array_board = [
                 [0,0,0],
                 [0,0,0],
-                [0,"O",0]
+                [0,0,0]
               ]
 
   winner = None
