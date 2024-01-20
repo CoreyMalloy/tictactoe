@@ -30,12 +30,11 @@ class Board():
   def __str__(self) -> str:
     return str(self.array_board)
   
-class Game:
+class Game():
 
   ExampleBoard = Board()
-  
-  for i in range(0, 3, 1):
-    print(ExampleBoard)
+
+  print(ExampleBoard)
   
   while True:
     x = input("enter a x val: ")
@@ -49,4 +48,4 @@ class Game:
 
 
 if __name__ == "__main__":
-  runGame = Game()
+  Game()
