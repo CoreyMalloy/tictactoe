@@ -8,7 +8,9 @@ class Board():
   winner = None
 
   def __init__(self):
-    print("Board Made")
+    print(self.array_board[0])
+    print(self.array_board[1])
+    print(self.array_board[2])
 
   def selection(self, x, y, player) -> bool:
     if self.array_board[x][y] == 0:
@@ -31,17 +33,18 @@ class Board():
 class Game:
 
   ExampleBoard = Board()
-
+  
+  for i in range(0, 3, 1):
+    print(ExampleBoard)
+  
   while True:
-    x = input("enter a x val")
-    y = input("enter a y val")
+    x = input("enter a x val: ")
+    y = input("enter a y val: ")
     
     if ExampleBoard.selection(int(x) , int(y), "X"):
       break
     else:
       print("invalid position")
-
-
   print(ExampleBoard)
 
 
